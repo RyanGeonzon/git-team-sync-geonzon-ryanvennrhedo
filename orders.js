@@ -27,6 +27,6 @@ function vipBonus(order) {
     }
     
     return 0;
-}S
+};
 
 module.exports = { createOrder, applyDiscount, cancelOrder, calculateLoyaltyPoints };
