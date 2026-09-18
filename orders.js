@@ -21,8 +21,10 @@ function calculateLoyaltyPoints(order) {
 
 function vipBonus(order) {
     if (order > 100) {
-        return 1.5 * calculateLoyaltyPoints;
+        1.5 *= calculateLoyaltyPoints;
     }
+
+    return Math.round(calculateLoyaltyPoints);
 }
 
 module.exports = { createOrder, applyDiscount, cancelOrder, calculateLoyaltyPoints };
